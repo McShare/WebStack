@@ -17,6 +17,12 @@
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
+                <li class="submit-tag">
+                     <?php
+                        if(function_exists('wp_nav_menu')) wp_nav_menu( array('container' => false, 'items_wrap' => '%3$s', 'theme_location' => 'nav_main',) ); 
+                     ?>
+                    </li>
+                    <br>
                 <?php
                 foreach($categories as $category) {
                     if($category->category_parent == 0){
@@ -54,12 +60,6 @@
                     }
                 }
                 ?> 
-
-                     <li class="submit-tag">
-                     <?php
-                        if(function_exists('wp_nav_menu')) wp_nav_menu( array('container' => false, 'items_wrap' => '%3$s', 'theme_location' => 'nav_main',) ); 
-                     ?>
-                    </li>
                 </ul>
             </div>
         </div>
