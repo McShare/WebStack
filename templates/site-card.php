@@ -48,7 +48,7 @@
             } 
 
             ?>
-            <a href="<?php echo $url ?>" target="<?php echo $blank ?>" class="xe-widget xe-conversations box2 label-info" <?php echo $tooltip . ' ' . $is_html ?> title="<?php echo $title ?>">
+            <a href="<?php echo $url ?>" class="xe-widget xe-conversations box2 label-info" <?php echo $tooltip . ' ' . $is_html ?> title="<?php echo $title ?>">
                 <div class="xe-comment-entry">
                     <div class="xe-user-img">
                         <?php if(io_get_option('lazyload')): ?>
