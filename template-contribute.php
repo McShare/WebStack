@@ -83,17 +83,6 @@ include( 'templates/header-nav.php' );
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-md-2 mt-2">
-                                <label for="tougao_wechat_qr">公众号二维码:</label>
-                                <input type="hidden" value="" id="tougao_wechat_qr" name="tougao_wechat_qr" />
-                                <div class="upload_img wechat">
-                                    <div class="show_ico">
-                                        <img id="show_wechat_qr" src="<?php echo get_template_directory_uri() . '/images/add.png' ?>" alt="公众号二维码">
-                                        <i id="remove_wechat_qr" class="fa fa-times-circle remove" data-id="" data-type="wechat_qr" style="display: none;"></i>
-                                    </div> 
-                                    <input type="file" id="upload_wechat_qr" data-type="wechat_qr" accept="image/*" onchange="uploadImg(this)" >
-                                </div>
-                            </div>
                             <div class="col-sm-9 col-md-10 mt-2">
                                 <label style="vertical-align:top" for="tougao_content">网站介绍:</label>
                                 <textarea rows="6" cols="55" id="tougao_content" name="tougao_content"></textarea>
