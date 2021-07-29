@@ -124,7 +124,7 @@ $options[] = array(
             'type'       => 'switcher',
             'title'      => '显示公告',
             'desc'      => '在首页顶部显示公告',
-            'default'    => true,
+            'default'    => false,
         ),
         array(
             'id'         => 'bulletin_n',
@@ -139,7 +139,7 @@ $options[] = array(
             'type'       => 'switcher',
             'title'      => '友情链接',
             'label'      => '在首页底部添加友情链接',
-            'default'    => true,
+            'default'    => false,
         ),
 
 
@@ -183,7 +183,7 @@ $options[] = array(
             'id'      => 'is_search',
             'type'    => 'switcher',
             'title'   => '搜索',
-            'default' => true,
+            'default' => false,
         ),
         array(
             'id'      => 'is_go',
@@ -200,9 +200,9 @@ $options[] = array(
             'id'      => 'ico_url',
             'type'    => 'text',
             'title'   => '图标源',
-            'default' => 'https://api.ooopn.com/ico/api.php?url=',
+            'default' => 'https://api.webmasterapi.com/v1/favicon/[apiKey]/',
             'desc'    => 'api 地址',
-            'after'   => '如果获取图标失效，请百度搜索‘获取网站图标api’替换能用的就可以了<br>或者自建api服务，源码地址：<a href="https://www.iowen.cn/favicon-api/" target="_blank">https://www.iowen.cn/favicon-api/</a>',
+            'after'   => '请将[apikey]更换为<a href="https://www.webmasterapi.com/get-favicons">WebmasterAPI</a>登陆后获取的密钥。<br>如果还是获取图标失败，请百度‘获取网站图标api’替换能用的就可以了<br>或者自建api服务，源码地址：<a href="https://www.iowen.cn/favicon-api/" target="_blank">https://www.iowen.cn/favicon-api/</a>',
         ),
         array(
             'id'      => 'url_format',
@@ -254,6 +254,10 @@ $options[] = array(
             'id' => 'custom_css',
             'type' => 'wysiwyg',
             'title' => '自定义样式css代码',
+            'default' => '.sidebar-menu .main-menu li.has-sub>a:before,.type-text:after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                }',
             'desc' => '显示在网站头部 &lt;head&gt;',
             'after'    => '<p class="cs-text-muted">'.__('自定义 CSS,自定义美化...<br>如：','io_setting').'body .test{color:#ff0000;}</p>',
             'settings' => array(
@@ -294,7 +298,7 @@ $options[] = array(
             'id'      => 'ad_right_s',
             'type'    => 'switcher',
             'title'   => '详情页右边广告位',
-            'default' => true,
+            'default' => false,
         ),
         array(
             'id'      => 'ad_footer_s',
