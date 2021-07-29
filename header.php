@@ -22,7 +22,8 @@
 <link rel="apple-touch-icon" href="<?php echo io_get_option('apple_icon') ?>">
 <?php wp_head(); ?>
 </head>
- <body id="body" class="page-body">
+<?php if (io_get_option('theme_mode') == 'auto') {?>
+   <body id="body" class="page-body">
    <script>
    let prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
    if (prefersDarkMode) {
@@ -31,5 +32,8 @@
       document.getElementById("body").classList.add("white");
    }
    </script>
+<?php } else {?>
+   <body class="page-body <?php echo io_get_option('theme_mode')?>">
+<?php }?>
     <div class="page-container">
       

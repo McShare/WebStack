@@ -156,7 +156,8 @@ $options[] = array(
             'class'   => 'horizontal',
             'options' => array(
                 'black'     => '暗色',
-                'white'     => '亮色'
+                'white'     => '亮色',
+                'auto'      => '自动',
             ),
         ),
 		array(

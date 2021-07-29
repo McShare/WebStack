@@ -3,9 +3,10 @@
 define( 'THEME_URL', get_bloginfo('template_directory') );
 function theme_load_scripts() {
 	$theme_version = esc_attr(wp_get_theme()->get('Version'));
-    wp_register_style( 'font-awesome',      THEME_URL.'/css/font-awesome.min.css', array(), $theme_version, 'all'  );
+    //wp_register_style( 'font-awesome',      THEME_URL.'/css/font-awesome.min.css', array(), $theme_version, 'all'  );
 	wp_register_style( 'bootstrap',         THEME_URL.'/css/bootstrap.css', array(), $theme_version, 'all'  );
 	wp_register_style( 'nav',               THEME_URL.'/css/nav.css', array(), $theme_version );
+	wp_register_style( 'font-awesome','https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css', array(), '5.15.3');
 
 	wp_register_script( 'bootstrap',        THEME_URL.'/js/bootstrap.min.js', array('jquery'), $theme_version, true );
 	wp_register_script( 'TweenMax',         THEME_URL.'/js/TweenMax.min.js', array('jquery'), $theme_version, true );
@@ -14,8 +15,8 @@ function theme_load_scripts() {
 
 	if( !is_admin() )
     {
-		wp_enqueue_style('font-awesome');
 		wp_enqueue_style('bootstrap');
+		wp_enqueue_style('font-awesome');
 		wp_enqueue_style('nav'); 
 
 		wp_deregister_script( 'jquery' );
