@@ -186,6 +186,12 @@ $options[] = array(
             'default' => false,
         ),
         array(
+            'id'      => 'is_weather',
+            'type'    => 'switcher',
+            'title'   => '天气 (海外用户可能无法正常使用)',
+            'default' => false,
+        ),
+        array(
             'id'      => 'is_go',
             'type'    => 'switcher',
             'title'   => '内链跳转',
