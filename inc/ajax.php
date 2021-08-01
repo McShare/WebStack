@@ -66,27 +66,26 @@ function io_contribute(){
 	$title = isset( $_POST['tougao_title'] ) ? trim(htmlspecialchars($_POST['tougao_title'], ENT_QUOTES)) : '';
 	$category = isset( $_POST['tougao_cat'] ) ? $_POST['tougao_cat'] : '0';
 	$sites_ico = isset( $_POST['tougao_sites_ico'] ) ? trim(htmlspecialchars($_POST['tougao_sites_ico'], ENT_QUOTES)) : '';
-	$wechat_qr = isset( $_POST['tougao_wechat_qr'] ) ? trim(htmlspecialchars($_POST['tougao_wechat_qr'], ENT_QUOTES)) : '';
 	$content = isset( $_POST['tougao_content'] ) ? trim(htmlspecialchars($_POST['tougao_content'], ENT_QUOTES)) : '';
 	
 	// 表单项数据验证
 	if ( $category == "0" ){
-		error('{"status":4,"msg":"请选择分类。"}');
+		error('{"status":4,"msg":"请选择分类噢。"}');
 	}
 	if ( !empty(get_term_children($category, 'favorites'))){
-		error('{"status":4,"msg":"不能选用父级分类目录。"}');
+		error('{"status":4,"msg":"不能选用父级分类目录噢。"}');
 	}
 	if ( empty($sites_sescribe) || mb_strlen($sites_sescribe) > 50 ) {
-		error('{"status":4,"msg":"网站描叙必须填写，且长度不得超过50字。"}');
+		error('{"status":4,"msg":"网站描述一定要填写，而且不要超过50字噢。"}');
 	}
-	if ( empty($sites_link) && empty($wechat_qr) ){
-		error('{"status":3,"msg":"网站链接和公众号二维码至少填一项。"}');
+	if ( empty($sites_link) ){
+		error('{"status":3,"msg":"一定要填写网站链接噢。"}');
 	}
 	elseif ( !empty($sites_link) && !preg_match('/http(s)?:\/\/[\w.]+[\w\/]*[\w.]*\??[\w=&\+\%]*/is', $sites_link)) {
-		error('{"status":4,"msg":"网站链接必须符合URL格式 (https://'.$_SERVER['SERVER_NAME'].')"}');
+		error('{"status":4,"msg":"网站链接必须符合规范URL格式噢（https://'.$_SERVER['SERVER_NAME'].'）"}');
 	}
 	if ( empty($title) || mb_strlen($title) > 30 ) {
-		error('{"status":4,"msg":"网站名称必须填写，且长度不得超过30字。"}');
+		error('{"status":4,"msg":"一定要填写网站名称，而且不要超过30字噢。"}');
 	}
 	//if ( empty($content) || mb_strlen($content) > 10000 || mb_strlen($content) < 6) {
 	//	error('{"status":4,"msg":"内容必须填写，且长度不得超过10000字，不得少于6字。"}');
