@@ -83,7 +83,7 @@ function io_contribute(){
 		error('{"status":3,"msg":"网站链接和公众号二维码至少填一项。"}');
 	}
 	elseif ( !empty($sites_link) && !preg_match('/http(s)?:\/\/[\w.]+[\w\/]*[\w.]*\??[\w=&\+\%]*/is', $sites_link)) {
-		error('{"status":4,"msg":"网站链接必须符合URL格式 (https://github.com)"}');
+		error('{"status":4,"msg":"网站链接必须符合URL格式 (https://'.$_SERVER['SERVER_NAME'].')"}');
 	}
 	if ( empty($title) || mb_strlen($title) > 30 ) {
 		error('{"status":4,"msg":"网站名称必须填写，且长度不得超过30字。"}');
