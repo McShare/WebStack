@@ -62,7 +62,7 @@ include( 'templates/header-nav.php' );
                             <div class="col-sm-6 mt-2">
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="fa fa-braille fa-fw" aria-hidden="true"></i></div>
-                                <input type="text" class="form-control" value="" id="tougao_sites_sescribe" name="tougao_sites_sescribe"  placeholder="网站描叙 *" maxlength="50"/>
+                                <input type="text" class="form-control" value="" id="tougao_sites_sescribe" name="tougao_sites_sescribe"  placeholder="网站简介 *" maxlength="50"/>
                                 </div>
                             </div>
                             <div class="col-sm-6 mt-2">
