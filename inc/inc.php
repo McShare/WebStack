@@ -445,7 +445,6 @@ class iconfont {
 			if( $before ){
                 $item_output .= $icon . '
                 <span class="smooth">' . $matches[2] . '</span>';
-                // <span class="label label-Primary pull-right hidden-collapsed">♥</span>
 			} else {
                 $item_output .= '
                 <span class="smooth">' . $matches[2] . '</span>
