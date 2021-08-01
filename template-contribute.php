@@ -33,7 +33,6 @@ include( 'templates/header-nav.php' );
                     </div>
                 </div>
                 <div class="panel panel-tougao">
-                    <h1 class="h2">添加网站</h1>
                     <form id="tougao" class="io-tougao mb-4" method="post" action="<?php echo $_SERVER["REQUEST_URI"]?>">
                         <div style="text-align: left; padding-top: 10px;">
                             <label for="tougao_sites_ico">网站图标:</label>
