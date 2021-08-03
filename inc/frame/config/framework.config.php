@@ -12,7 +12,7 @@ $settings           = array(
   'menu_icon'       => CS_URI.'/assets/images/setting.png',
   'ajax_save'       => true,
   'show_reset_all'  => true,
-  'framework_title' => 'WebStack '.__('主题设置','io_setting').'<style>.cs-framework .cs-body {min-height: 700px;}</style><span style="font-size: 14px;"> - V '.wp_get_theme()->get('Version').'</span> <a href="https://www.iowen.cn/webstack-pro-navigation-theme-advanced/" target="_blank">升级pro</a>',
+  'framework_title' => 'WebStack '.__('主题设置','io_setting').'<style>.cs-framework .cs-body {min-height: 700px;}</style><span style="font-size: 14px;"> - V '.wp_get_theme()->get('Version').'</span>',
   //'framework_title' => '主题设置',
 );
 
@@ -32,11 +32,6 @@ $options[] = array(
     'title' => '图标设置',
     'icon' => 'fa fa-star',
     'fields' => array(
-        array(
-            'type'    => 'notice',
-            'content' => '---》<a href="https://www.iowen.cn/wordpress-version-webstack/" target="_blank">查看教程</a>《---',
-            'class'   => 'info',
-        ),
         array(
             'id' => 'logo_normal',
             'type' => 'image',
@@ -418,7 +413,9 @@ $options[] = array(
 	
   		array(
 			'type'    => 'subheading',
-			'content' => '嘿！你好，欢迎使用WebStack主题。<br><br>目前这款主题为免费公开，如使用过程中遇到什么问题，可到博客<a href="https://www.iowen.cn" target="_blank">一为忆</a>反馈<br><br>制作一款WordPress主题不易，欢迎各位老板伸出援手，友情赞助！（你们的支持就是我最大的动力！）',
+			'content' => '嘿！你好，欢迎使用MCNav定制的WebStack主题~<br><br>
+			    目前这款主题为免费公开，如使用过程中遇到什么问题，可到<a href="https://github.com/McShare/WebStack" target="_blank">Github</a>反馈<br><br>
+			    修改不易，欢迎各位友情赞助！（你们的支持就是我们最大的动力！）',
 		),
 	
 		array(
