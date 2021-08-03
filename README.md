@@ -1,7 +1,7 @@
 # WebStack
 WordPress 版 WebStack 主题 MCNav 特供版
 
-基于一为导航版WebStack修改：https://github.com/owen0o0/WebStack
+基于一为忆版WebStack修改：https://github.com/owen0o0/WebStack
 
 ## 有什么不同？
 1. 更新 Font Awesome 5 图标包
@@ -11,4 +11,5 @@ WordPress 版 WebStack 主题 MCNav 特供版
 5. 加强二维码手机访问网站功能，使其可用
 7. 调整侧边栏顺序，首页等页面在上，网址分类在下
 8. 关闭默认广告，如有需要请自行在设置中开启
-9. 调整大量默认主题设置，默认关闭搜索框，友情链接等功能，更换了干净的主题图片
+9. 调整大量默认主题设置，默认关闭搜索框，友情链接等功能，更换了干净的主题图片，删除了一些无用广告提醒
+10. 优化了滚动条样式
