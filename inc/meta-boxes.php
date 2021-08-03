@@ -11,35 +11,27 @@ array(
 	"sites_link" => array(
 		"name" => "_sites_link",
 		"std" => "",
-		"title" => "输入网址链接，需包含 http(s)://<br><span style='font-weight: normal;color: crimson;margin-top: 10px;display: block;'>注意：“网址”和“公众号二维码”两者可同时填写，但是至少填一项。</span>",
+		"title" => "网址链接（需包含 http(s)://）",
 		"type"=>"text"),
 
 	"sites_sescribe" => array(
 		"name" => "_sites_sescribe",
 		"std" => "",
-		"title" => "描叙",
+		"title" => "描述",
 		"type"=>"text"),
 
 	"order" => array(
 		"name" => "_sites_order",
 		"std" => "0",
-		"title" => "网址排序数值越大越靠前",
+		"title" => "网址排序（数值越大越靠前）",
 		"type"=>"text"),
 
 	"thumbnail" => array(
 		"name" => "_thumbnail",
 		"std" => "",
-		"title" => "添加图标地址，调用自定义图标",
+		"title" => "图标地址（调用自定义图标）",
 		"size" => "",
         'button_text' => '添加图标',
-		"type"=>"upload"),
-
-	"wechat_qr" => array(
-		"name" => "_wechat_qr",
-		"std" => "",
-		"title" => "添加公众号二维码",
-		"size" => "",
-        'button_text' => '添加二维码',
 		"type"=>"upload"),
 );
 
