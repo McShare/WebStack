@@ -59,10 +59,6 @@ include( 'templates/header-nav.php' );
                                          <?php 
                                          $m_post_link_url = $m_link_url ?: get_permalink($post->ID);
                                          $qrname = "手机查看";
-                                         if(get_post_meta(get_the_ID(), '_wechat_qr', true)){
-                                            $qrurl=get_post_meta(get_the_ID(), '_wechat_qr', true);
-                                            $qrname = "公众号";
-                                         }
 
                                          $qrurl = "https://api.pwmqr.com/qrcode/create/?url=".$m_post_link_url;
                                          ?>
