@@ -119,7 +119,7 @@ function add_script_and_styles() {
 	jQuery(document).ready(function(){
 	var dami_upload_frame;
 	var value_id;
-	jQuery('.dami_upload_button').live('click',function(event){
+	jQuery('.dami_upload_button').on('click',function(event){
 	  value_id =jQuery( this ).attr('id');
 	  event.preventDefault();
 	  if( dami_upload_frame ){
