@@ -20,6 +20,12 @@
 <meta property="og:site_name" content="<?php echo io_get_option('seo_home_desc') ?>">
 <link rel="shortcut icon" href="<?php echo io_get_option('favicon') ?>">
 <link rel="apple-touch-icon" href="<?php echo io_get_option('apple_icon') ?>">
+<style>
+::-webkit-scrollbar-track-piece {background-color: #fff;-webkit-border-radius: 0}
+::-webkit-scrollbar {width: 10px;height: 10px}
+::-webkit-scrollbar-thumb {height: 50px;background-color: #b8b8b8;-webkit-border-radius: 6px;outline: 2px solid #fff;outline-offset: -2px;border: 2px solid #fff;filter: alpha(opacity = 50);-moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5}
+::-webkit-scrollbar-thumb:hover {height: 50px;background-color: #878987;-webkit-border-radius: 6px}
+</style>
 <?php wp_head(); ?>
 </head>
 <?php if (io_get_option('theme_mode') == 'auto') {?>
