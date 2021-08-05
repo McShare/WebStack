@@ -8,7 +8,7 @@
                 <div class="footer-inner">
                     <div class="footer-text">
                         Copyright © <?php echo date('Y') ?> <?php bloginfo('name'); ?> <?php if(io_get_option('icp')) echo '<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="link noopener">' . io_get_option('icp') . '</a>'?>
-                        &nbsp;&nbsp;Powered by <a href="https://wwww.minebbs.com" target="_blank"><strong>MineBBS</strong></a>&nbsp;&nbsp;Produced by <a href="https://www.mcshare.net" target="_blank"><strong>YYT, NyanCatda.</strong></a>
+                        <br>Powered by <a href="https://www.mcnav.net/" target="_blank">MCNav | MC导航网<br></a>Produced by <a href="https://www.mcshare.net/" target="_blank">YYT</a> | <a href="https://api.nyan.xyz/" target="_blank">NyanCatda</a>
                     </div>
                 </div>
             </footer>
