@@ -180,7 +180,7 @@ footer.main-footer{border-top:0;background-color:#fff}
 .siteico:before{content:'';display:block;padding-top:100%}
 .blur{-moz-filter:blur(15px);-ms-filter:blur(15px);filter:blur(15px);filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=false)}
 .blur-layer{top:0;left:0;right:0;bottom:0;position:absolute;width:inherit;height:inherit;opacity:.2}
-.img-cover{height:72px;width:72px;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;border:2px solid hsla(0,0%,100%,.9);border-radius:50%;animation:rotate 6s linear infinite;background:#fff}
+.img-cover{height:120px;width:120px;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;border:2px solid hsla(0,0%,100%,.9);border-radius:50%;animation:rotate 6s linear infinite;background:#fff}
 @keyframes rotate{0%{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .site-body .btn{border-radius:6px;padding:7px 16px;background-color:rgba(138,138,138,.15);transition:.3s}
 .site-body .btn:hover{color:#fff;background:#202224}
