@@ -3,6 +3,8 @@ WordPress 版 WebStack 主题 MCNav 特供版
 
 基于一为忆版WebStack修改：https://github.com/owen0o0/WebStack
 
+原版WebStack：https://github.com/WebStackPage/WebStackPage.github.io
+
 ## 有什么不同？
 1. 更新 Font Awesome 5 图标包
 2. 去除天气组件（但在设置中加入了开关）和Github标签，让页面更清新
@@ -15,5 +17,5 @@ WordPress 版 WebStack 主题 MCNav 特供版
 11. 修改后台网址提交界面的用语，修复图标上传按钮
 
 ## Todo
-1. 自动排序功能（权重排序）
+1. 同权重下首字母排序 → 字母排序
 2. 详情页评论功能修复
