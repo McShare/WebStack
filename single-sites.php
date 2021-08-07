@@ -130,7 +130,7 @@ include( 'templates/header-nav.php' );
                     if ($i == 0) echo '<div class="col-lg-12"><div class="nothing">没有相关内容!</div></div>';
                     ?>
                 </div>
-                                    <?php 
+                    <?php 
                     if ( comments_open() || get_comments_number() ) :
 	    				comments_template();
                     endif; 

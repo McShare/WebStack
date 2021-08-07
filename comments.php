@@ -21,6 +21,20 @@
 if ( post_password_required() ) {
 	return;
 }
+
+/**
+ * Gets the SVG code for a given icon.
+ *
+ * @since Twenty Twenty-One 1.0
+ *
+ * @param string $group The icon group.
+ * @param string $icon  The icon.
+ * @param int    $size  The icon size in pixels.
+ * @return string
+ */
+function twenty_twenty_one_get_icon_svg( $group, $icon, $size = 24 ) {
+	return Twenty_Twenty_One_SVG_Icons::get_svg( $group, $icon, $size );
+}
 ?>
 
 <div id="comments" class="comments-area">
