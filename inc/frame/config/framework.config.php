@@ -201,9 +201,9 @@ $options[] = array(
             'id'      => 'ico_url',
             'type'    => 'text',
             'title'   => '图标源',
-            'default' => 'https://api.webmasterapi.com/v1/favicon/[apiKey]/',
+            'default' => 'https://api.qqsuu.cn/api/favicon/get.php?url=',
             'desc'    => 'api 地址',
-            'after'   => '请将[apikey]更换为<a href="https://www.webmasterapi.com/get-favicons">WebmasterAPI</a>登陆后获取的密钥。<br>如果还是获取图标失败，请百度‘获取网站图标api’替换能用的就可以了<br>或者自建api服务，源码地址：<a href="https://www.iowen.cn/favicon-api/" target="_blank">https://www.iowen.cn/favicon-api/</a>',
+            'after'   => '如果获取图标失败，请百度‘获取网站图标api’替换能用的就可以了。<br>也可以自建api服务，源码地址：<a href="https://www.iowen.cn/favicon-api/" target="_blank">https://www.iowen.cn/favicon-api/</a>',
         ),
         array(
             'id'      => 'url_format',
