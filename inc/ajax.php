@@ -45,9 +45,9 @@ function io_img_remove(){
 		exit;
 	}
 	if ( false === wp_delete_attachment( $attach_id ) )
-		echo '{"status":4,"msg":"图片 '.$attach_id.' 删除失败！"}';
+		echo '{"status":4,"msg":"图片 '.$attach_id.' 删除失败 /(ㄒoㄒ)/~~"}';
 	else
-		echo '{"status":1,"msg":"删除成功！"}';
+		echo '{"status":1,"msg":"删除成功 o(*￣▽￣*)ブ"}';
 	exit; 
 }
 
@@ -57,7 +57,7 @@ add_action('wp_ajax_contribute_post', 'io_contribute');
 function io_contribute(){  
 	$delay = 40; 
 	if( isset($_COOKIE["tougao"]) && ( time() - $_COOKIE["tougao"] ) < $delay ){
-		error('{"status":2,"msg":"您投稿也太勤快了吧，'. ($delay - ( time() - $_COOKIE["tougao"] )).'秒后再试！"}');
+		error('{"status":2,"msg":"你投稿太勤快了吧，'. ($delay - ( time() - $_COOKIE["tougao"] )).'秒后再试 ╰(*°▽°*)╯"}');
 	} 
 	
 	//表单变量初始化
