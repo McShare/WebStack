@@ -20,12 +20,6 @@ array(
 		"title" => "描述",
 		"type"=>"text"),
 
-	"order" => array(
-		"name" => "_sites_order",
-		"std" => "0",
-		"title" => "网址排序（数值越大越靠前）",
-		"type"=>"text"),
-
 	"thumbnail" => array(
 		"name" => "_thumbnail",
 		"std" => "",
