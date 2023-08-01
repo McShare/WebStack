@@ -9,17 +9,14 @@
                 <label for="type-search">搜索</label>
                 <label for="type-br">工具</label>
                 <label for="type-zhihu">社区</label>
-                <label for="type-taobao1">生活</label>
-                <label for="type-zhaopin">求职</label>
             </div>
         </div>
         <div class="search-group group-a">
             <span class="type-text">常用</span>
             <ul class="search-type">
-                <li><input checked hidden type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+                <li><input checked hidden type="radio" name="type" id="type-zhannei" value="<?php bloginfo('url') ?>?s=" data-placeholder="站内搜索"><label for="type-zhannei"><span style="color:#888888">站内</span></label></li>
+                <li><input hidden type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
                 <li><input hidden type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="谷歌两下"><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-zhannei" value="<?php bloginfo('url') ?>?s=" data-placeholder="站内搜索"><label for="type-zhannei"><span style="color:#888888">站内</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q=" data-placeholder="淘宝"><label for="type-taobao"><span style="color:#f40">淘宝</span></label></li>
                 <li><input hidden type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing1"><span style="color:#007daa">Bing</span></label></li>
             </ul>
         </div>
@@ -53,27 +50,6 @@
                 <li><input hidden type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span style="color:#e6162d">微博</span></label></li>
                 <li><input hidden type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣"><label for="type-douban"><span style="color:#55a300">豆瓣</span></label></li>
                 <li><input hidden type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区"><label for="type-why"><span style="color:#428bca">搜外问答</span></label></li>
-            </ul>
-            </div>
-        <div class="search-group group-e">
-            <span class="type-text">生活</span>
-            <ul class="search-type">
-                <li><input hidden type="radio" name="type" id="type-taobao1" value="https://s.taobao.com/search?q=" data-placeholder="淘宝"><label for="type-taobao1"><span style="color:#f40">淘宝</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-jd" value="https://search.jd.com/Search?keyword=" data-placeholder="京东"><label for="type-jd"><span style="color:#c91623">京东</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-xiachufang" value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房"><label for="type-xiachufang"><span style="color:#dd3915">下厨房</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&s=" data-placeholder="香哈菜谱"><label for="type-xiangha"><span style="color:#930">香哈菜谱</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-12306" value="http://www.12306.cn/?" data-placeholder="12306"><label for="type-12306"><span style="color:#07f">12306</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?" data-placeholder="去哪儿"><label for="type-qunar"><span style="color:#00afc7">去哪儿</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?" data-placeholder="快递100"><label for="type-快递100"><span style="color:#3278e6">快递100</span></label></li>
-            </ul>
-        </div>
-        <div class="search-group group-f">
-            <span class="type-text">求职</span>
-            <ul class="search-type">
-                <li><input hidden type="radio" name="type" id="type-zhaopin" value="https://sou.zhaopin.com/jobs/searchresult.ashx?kw=" data-placeholder="智联招聘"><label for="type-zhaopin"><span style="color:#689fee">智联招聘</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-51job" value="https://search.51job.com/?" data-placeholder="前程无忧"><label for="type-51job"><span style="color:#ff6000">前程无忧</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-lagou" value="https://www.lagou.com/jobs/list_" data-placeholder="拉钩网"><label for="type-lagou"><span style="color:#00b38a">拉钩网</span></label></li>
-                <li><input hidden type="radio" name="type" id="type-liepin" value="https://www.liepin.com/zhaopin/?key=" data-placeholder="猎聘网"><label for="type-liepin"><span style="color:#303a40">猎聘网</span></label></li>
             </ul>
         </div>
     </div>
